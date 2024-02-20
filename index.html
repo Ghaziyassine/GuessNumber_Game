@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+        <div class="image">
+            <img src="images/ensaj.png" class="Logo">
+        </div>
+    <audio id="correctSound">
+        <source src="audio/correct.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="wrongSound">
+        <source src="audio/wrong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h2>Guess the Number Game</h2>
+        <p>Guess a number between 1 and 10:</p>
+        <input type="number" id="guessField" min="1" max="10">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
